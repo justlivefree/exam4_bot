@@ -2,7 +2,7 @@ from threading import Thread
 import httpx
 
 
-def my_func(url_json: str) -> dict:
+def my_func(url_json: str) -> None:
     req = httpx.get(url_json)
     data = req.text
     print(data, '\n')
